@@ -1,0 +1,15 @@
+@import "variables";
+
+.logo {
+  text-align: center;
+  padding: 3rem;
+}
+.logo .logo__heading {
+  font-size: 7rem;
+  color: white;
+  font-weight: bolder;
+  display: inline-block;
+  border-top: 0.5rem solid white;
+  border-bottom: 0.5rem solid white;
+  padding: 2rem;
+}

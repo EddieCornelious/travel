@@ -1,0 +1,70 @@
+@import "variables";
+
+.menu {
+  padding: 10rem 0;
+  position: relative;
+}
+.menu__header__wrap {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+.menu__boast {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  font-family: "Playball";
+  color: $red;
+}
+.menu__title {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+.menu__row {
+  margin-top: 2rem;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.3rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  position: relative;
+  background-color: black;
+}
+
+.menu__item {
+  padding: 3rem;
+}
+
+.menu__item__top {
+  display: flex;
+  border-bottom: 1.5px dotted #e5e5e5;
+  justify-content: space-between;
+}
+
+.menu__item__bottom {
+  padding-top: 10px;
+}
+
+.menu__item__name {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.menu__item__desc {
+  color: #757575;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.menu__item__price {
+  font-size: 2rem;
+}

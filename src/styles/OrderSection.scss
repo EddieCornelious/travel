@@ -1,0 +1,54 @@
+@import "variables";
+.no-padding {
+  padding: 0;
+  margin: 0;
+}
+.video__wrap {
+  width: 100%;
+  height: 20rem;
+  height: 80rem;
+  display: flex;
+  position: relative;
+
+  video {
+    object-fit: fill;
+    width: 100%;
+  }
+}
+
+.video__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(22, 33, 44, 0.7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.video__text {
+  position: absolute;
+  width: 30%;
+  left: 5%;
+  top: 50%;
+  color: white;
+  transform: translate(0%, -50%);
+  @media screen and (max-width: 800px) {
+    width: auto;
+  }
+  h3 {
+    font-size: 5rem;
+  }
+  p {
+    line-height: 1.9;
+  }
+  a {
+    background-color: $primary;
+    padding: 2rem 6rem;
+    color: white;
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bolder;
+  }
+}

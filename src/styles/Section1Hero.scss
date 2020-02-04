@@ -1,0 +1,35 @@
+@import "variables";
+
+.section__hero {
+  @media screen and (max-width: 1024px) {
+    background-attachment: scroll;
+  }
+  height: 100vh;
+  background-image: url("../images/sushi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 10rem;
+  background-attachment: fixed;
+  position: relative;
+  .section__hero__content {
+    top: 50%;
+    width: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2.5rem 0;
+    color: white;
+    text-align: center;
+    transform: translate(0, -50%);
+
+    h3 {
+      font-size: 3.2rem;
+    }
+
+    p {
+      font-size: 2rem;
+      color: $red;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "variables";
+
+._nav__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+._nav__wrap {
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+}
+._nav__wrap li a {
+  font-size: 2rem;
+
+  color: white;
+}
+
+._nav__wrap li {
+}
+
+._nav__wrap li a:hover {
+  color: $red;
+}
