@@ -1,15 +1,17 @@
 import "../styles/OrderSection.scss";
 import React from "react";
-
+import LazyLoad from "react-lazyload";
 import video from "../images/Manuels.mp4";
 
 const OrderVideo = () => {
   return (
     <div className="container-fluid no-padding">
       <div className="video__wrap">
-        <video autoPlay muted loop id="myVideo">
-          <source src={video} type="video/mp4" />
-        </video>
+        <LazyLoad>
+          <video autoPlay muted loop id="myVideo">
+            <source src={video} type="video/mp4" />
+          </video>
+        </LazyLoad>
         <div className="video__overlay">&nbsp;</div>
         <div className="video__text">
           <h3>Order Now Online</h3>
