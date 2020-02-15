@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/WelcomeSection.scss";
 import Fade from "react-reveal/Fade";
 import img1 from "../images/manuels_outside.jpg";
+import forksvg from "../images/utensils-solid.svg";
 
 const WelcomeSection = () => {
   return (
@@ -18,7 +19,7 @@ const WelcomeSection = () => {
               chefs and service.
             </p>
             <div className="icon__wrap">
-              <i className="fas fa-utensils" />
+              <img src={forksvg} />
             </div>
           </div>
         </div>
