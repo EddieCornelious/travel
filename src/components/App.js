@@ -1,17 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/App.scss";
 import React from "react";
-import MainSection from "./MainSection.js";
-import WelcomeSection from "./WelcomeSection.js";
-import MainMenuSection from "./MainMenuSection.js";
-import DessertSection from "./DessertSection.js";
-import DrinkSection from "./DrinkSection.js";
-import Reservation from "./Reservation.js";
-import Footer from "./Footer.js";
-import OrderSection from "./OrderSection.js";
 import debounce from "lodash.debounce";
-import Section1Hero from "./Section1Hero.js";
+import MainSection from "./MainSection.js";
 import ResponsiveNav from "./ResponsiveNav.js";
+
+const WelcomeSection = React.lazy(() => import("./WelcomeSection.js"));
+const MainMenuSection = React.lazy(() => import("./MainMenuSection.js"));
+const DessertSection = React.lazy(() => import("./DessertSection.js"));
+const DrinkSection = React.lazy(() => import("./DrinkSection.js"));
+const Reservation = React.lazy(() => import("./Reservation.js"));
+const Footer = React.lazy(() => import("./Footer.js"));
+const OrderSection = React.lazy(() => import("./OrderSection.js"));
+const Section1Hero = React.lazy(() => import("./Section1Hero.js"));
 
 class App extends React.Component {
   constructor(props) {
@@ -51,14 +52,16 @@ class App extends React.Component {
         </div>
         <ResponsiveNav />
         <MainSection />
-        <WelcomeSection />
-        <Section1Hero />
-        <MainMenuSection />
-        <DessertSection />
-        <DrinkSection />
-        <OrderSection />
-        <Reservation />
-        <Footer />
+        <React.Suspense fallback={<div>Loading...</div>}>
+          <WelcomeSection />
+          <Section1Hero />
+          <MainMenuSection />
+          <DessertSection />
+          <DrinkSection />
+          <OrderSection />
+          <Reservation />
+          <Footer />
+        </React.Suspense>
       </div>
     );
   }
