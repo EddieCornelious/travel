@@ -4,7 +4,7 @@ import LazyLoad from "react-lazyload";
 
 const Section1Hero = () => {
   return (
-    <LazyLoad offset={150} height={"100vh"}>
+    <LazyLoad offset={350} height={"100vh"}>
       <div className="section__hero">
         <div className="section__hero__content">
           <h3>

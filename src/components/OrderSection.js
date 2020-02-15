@@ -7,7 +7,7 @@ const OrderVideo = () => {
   return (
     <div className="container-fluid no-padding">
       <div className="video__wrap">
-        <LazyLoad>
+        <LazyLoad offset={400}>
           <video autoPlay muted loop id="myVideo">
             <source src={video} type="video/mp4" />
           </video>
