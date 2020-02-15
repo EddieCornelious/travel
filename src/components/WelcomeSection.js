@@ -19,14 +19,14 @@ const WelcomeSection = () => {
               chefs and service.
             </p>
             <div className="icon__wrap">
-              <img src={forksvg} />
+              <img alt="utencil" src={forksvg} />
             </div>
           </div>
         </div>
 
         <div className="welcome__section__right">
           <div className="col-xs-12">
-            <img src={img1} />
+            <img alt="Manuel's outside" src={img1} />
           </div>
         </div>
       </div>

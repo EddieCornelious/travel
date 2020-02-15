@@ -13,21 +13,25 @@ const ResponsiveNav = () => {
           <span />
 
           <ul id="menu">
-            <a href="#">
-              <li>Home</li>
-            </a>
-            <a href="#">
-              <li>About</li>
-            </a>
-            <a href="#">
-              <li>Drinks</li>
-            </a>
-            <a href="#">
-              <li>Meals</li>
-            </a>
-            <a href="#" target="_blank">
-              <li>Show me more</li>
-            </a>
+            <li href="#">
+              <a href="#">Home</a>
+            </li>
+
+            <li href="#">
+              <a href="#">About</a>
+            </li>
+
+            <li href="#">
+              <a href="#">Drinks</a>
+            </li>
+
+            <li href="#">
+              <a href="#">Meals</a>
+            </li>
+
+            <li href="#">
+              <a href="#">Show me more</a>
+            </li>
           </ul>
         </div>
       </nav>
