@@ -1,11 +1,12 @@
-@import "variables";
-@import "responsive";
+@import 'variables';
+@import 'responsive';
 
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -31,7 +32,7 @@ html {
 
 body {
   background-color: white;
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   overflow-x: hidden;
 }
 
@@ -40,6 +41,33 @@ body {
   -moz-animation: fadeIn 3s; /* Fx 5+ */
   -o-animation: fadeIn 3s; /* Opera 12+ */
   animation: fadeIn 3s; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes nav__in {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 1);
+  }
+}
+
+@-moz-keyframes nav__in {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 1);
+  }
+}
+
+@-o-keyframes nav__in {
+  0% {
+    background: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background: rgba(0, 0, 0, 1);
+  }
 }
 
 @keyframes nav__in {
@@ -53,10 +81,14 @@ body {
 .scroll__header.alt {
   padding: 1rem 0;
   display: none;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 9999;
-  animation: nav__in 2s;
+  -webkit-animation: nav__in 2s;
+     -moz-animation: nav__in 2s;
+       -o-animation: nav__in 2s;
+          animation: nav__in 2s;
   background: rgba(0, 0, 0, 1);
 }
 
