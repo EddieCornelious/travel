@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 .menu {
   padding: 10rem 0;
@@ -18,12 +18,13 @@
   font-size: 2.5rem;
   margin-bottom: 1rem;
   display: block;
-  font-family: "Playball";
-  color: $red;
+  font-family: 'Playball';
+  color: $primary;
 }
 .menu__title {
   font-size: 4rem;
   font-weight: bolder;
+  color: $secondary;
 }
 .menu__row {
   margin-top: 2rem;
@@ -37,7 +38,7 @@
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   position: relative;
-  background-color: black;
+  background-color: $secondary;
 }
 
 .menu__item {
@@ -46,8 +47,9 @@
 
 .menu__item__top {
   display: flex;
-  border-bottom: 1.5px dotted #e5e5e5;
+  border-bottom: 1.5px dotted #959595;
   justify-content: space-between;
+  color: $secondary;
 }
 
 .menu__item__bottom {
@@ -57,12 +59,15 @@
 .menu__item__name {
   font-size: 2rem;
   text-transform: uppercase;
+  color: $secondary;
 }
 
 .menu__item__desc {
-  color: #757575;
+  color: #959595;
   text-transform: capitalize;
   margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .menu__item__price {

@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 ._nav__wrap {
   display: -webkit-box;
@@ -25,5 +25,5 @@
 }
 
 ._nav__wrap li a:hover {
-  color: $red;
+  color: $primary;
 }
