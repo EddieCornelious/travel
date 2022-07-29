@@ -1,5 +1,7 @@
+@import 'variables';
+
 .footer {
-  background-color: black;
+  background-color: $secondary;
   color: white;
   text-align: center;
   padding: 5rem 0;

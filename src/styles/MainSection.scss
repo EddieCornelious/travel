@@ -1,5 +1,5 @@
-@import "variables";
-@import "responsive";
+@import 'variables';
+@import 'responsive';
 
 .main__section {
   height: 100vh;
@@ -10,22 +10,22 @@
       from(rgba(46, 46, 44, 0.8)),
       to(rgba(46, 46, 44, 0.8))
     ),
-    url("../images/hero.jpg");
+    url('../images/hero.jpg');
   background-image: -webkit-linear-gradient(
       rgba(46, 46, 44, 0.8),
       rgba(46, 46, 44, 0.8)
     ),
-    url("../images/hero.jpg");
+    url('../images/hero.jpg');
   background-image: -o-linear-gradient(
       rgba(46, 46, 44, 0.8),
       rgba(46, 46, 44, 0.8)
     ),
-    url("../images/hero.jpg");
+    url('../images/hero.jpg');
   background-image: linear-gradient(
       rgba(46, 46, 44, 0.8),
       rgba(46, 46, 44, 0.8)
     ),
-    url("../images/hero.jpg");
+    url('../images/hero.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,12 +46,14 @@
 
   @include respond(phone) {
     padding: 0;
+    top: 50%;
   }
 }
 .main__section__content h1 {
-  font-size: 10rem;
+  font-size: 8rem;
+
   @include respond(phone) {
-    font-size: 8rem;
+    display: none;
   }
 }
 
@@ -59,11 +61,8 @@
   font-size: 4rem;
   font-weight: 500;
   line-height: 1.6;
-  color: $red;
-}
-
-@media only screen and (max-width: 928px) {
-  html {
-    font-size: 7px;
+  color: $primary;
+  @include respond(phone) {
+    font-size: 3rem;
   }
 }

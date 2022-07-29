@@ -18,16 +18,16 @@
       from(rgba(0, 0, 0, 0.8)),
       to(rgba(0, 0, 0, 0.8))
     ),
-    url("../images/cheesecake.jpg");
+    url('../images/cheesecake.jpg');
   background-image: -webkit-linear-gradient(
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url("../images/cheesecake.jpg");
+    url('../images/cheesecake.jpg');
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../images/cheesecake.jpg");
+    url('../images/cheesecake.jpg');
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../images/cheesecake.jpg");
+    url('../images/cheesecake.jpg');
 }
 
 .banner2 {
@@ -38,21 +38,25 @@
       from(rgba(0, 0, 0, 0.8)),
       to(rgba(0, 0, 0, 0.8))
     ),
-    url("../images/wine.jpg");
+    url('../images/wine.jpg');
   background-image: -webkit-linear-gradient(
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url("../images/wine.jpg");
+    url('../images/wine.jpg');
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../images/wine.jpg");
+    url('../images/wine.jpg');
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../images/wine.jpg");
+    url('../images/wine.jpg');
 }
 
 .parallax__banner__text {
   color: white;
-  font-size: 10rem;
+  font-size: 8rem;
   margin: 0 auto;
   text-transform: uppercase;
+
+  @media only screen and (max-width: 400px) {
+    font-size: 6rem;
+  }
 }

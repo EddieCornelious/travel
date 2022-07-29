@@ -1,11 +1,11 @@
-@import "variables";
+@import 'variables';
 
 .section__hero {
   @media screen and (max-width: 1024px) {
     background-attachment: scroll;
   }
   height: 100vh;
-  background-image: url("../images/sushi.jpg");
+  background-image: url('../images/sushi.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -28,7 +28,7 @@
 
     p {
       font-size: 2rem;
-      color: $red;
+      color: $primary;
       text-transform: uppercase;
     }
   }
