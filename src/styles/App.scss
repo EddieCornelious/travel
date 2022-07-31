@@ -16,6 +16,10 @@ html {
   @include respond(tab-land) {
     font-size: 9px;
   }
+
+  @include respond(sm-phone) {
+    font-size: 7px;
+  }
 }
 
 body {
