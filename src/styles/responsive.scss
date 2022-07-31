@@ -19,4 +19,10 @@
       @content;
     } //1800
   }
+
+  @if $breakpoint == sm-phone {
+    @media only screen and (max-width: 375px) {
+      @content;
+    } //1800
+  }
 }

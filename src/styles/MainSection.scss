@@ -43,17 +43,27 @@
   text-align: center;
   padding: 4rem;
   backface-visibility: hidden;
+  @media only screen and (max-width: 712px) {
+    padding: 0;
+  }
 
   @include respond(phone) {
     padding: 0;
-    top: 50%;
   }
 }
 .main__section__content h1 {
   font-size: 8rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  @media only screen and (max-width: 569px) {
+    font-size: 6rem;
+  }
+  @media only screen and (max-width: 569px) {
+    font-size: 6rem;
+  }
 
-  @include respond(phone) {
-    display: none;
+  @media only screen and (max-height: 611px) {
+    font-size: 4rem;
   }
 }
 
@@ -62,7 +72,9 @@
   font-weight: 500;
   line-height: 1.6;
   color: $primary;
-  @include respond(phone) {
+  text-transform: capitalize;
+
+  @media only screen and (max-height: 611px) {
     font-size: 3rem;
   }
 }

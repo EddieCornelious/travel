@@ -13,8 +13,20 @@
 html {
   font-size: 10px;
 
-  @include respond(tab-land) {
+  @include respond(desktop) {
     font-size: 9px;
+  }
+
+  @include respond(tab-land) {
+    font-size: 8px;
+  }
+
+  @include respond(tab-port) {
+    font-size: 7px;
+  }
+
+  @include respond(phone) {
+    font-size: 6px;
   }
 }
 
@@ -90,7 +102,7 @@ a:active {
 }
 
 .scroll__header.alt {
-  @include respond(phone) {
+  @include respond(tab-land) {
     display: none !important;
   }
 }
